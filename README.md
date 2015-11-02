@@ -14,10 +14,52 @@
 
 - Git/GitHub
 - Reintroducción a JS
-- HTML5 API
-- AJAX (HTTP y JSON)
-- JS Avanzado (POO, Programación funcional, ECMA6)
-- Node.js (Gulp)
+- JS Avanzado: 
+    - POO
+    - Programación funcional
+    - MVC (Backbone)
+    - ECMA6
+- AJAX:
+    - HTTP
+    - JSON
+    - CORS
+- HTML5 API:
+    - Selectors
+    - Geolocalización
+    - LocalStorage
+    - IndexedDB
+    - ContentEditable
+    - Offline
+    - History
+    - Drag & Drop
+    - File
+    - Web Messaging
+    - Workers
+    - WebSockets
+    - Canvas
+- Gulp
+
+### Temario (extras):
+
+- Firebase
+- Testings
+- Node.js:
+    - HTTP
+    - FS
+    - Process
+- Requirejs
+- Express
+- Jade
+- WebSockets
+- Bower
+- Yeoman
+
+### Temario (extras prácticas):
+
+- Desarrollar una API sencilla (sin frameworks) siguiendo la filosofía NoBackend con OMBD y Firebase
+- Desarrollar una API sencilla (con Backbone) siguiendo la filosofía NoBackend con OMBD y Firebase
+- Desarrollar una API con express, OMBD y Firebase
+- Desarrollar un Cliente Streaming (sockets.io) de Twitter con analisis sentimental
 
 
 ### Temario por día:
@@ -26,6 +68,8 @@
 	- C9
 	- Git y GitHub
 
+- **Dia 2:**
+	- Reintroducción a JS
 
 
 
@@ -34,7 +78,7 @@
 Teoría | Recursos
 ------------ | -------------
 [Clase 1](teoria/dia1.md)	| [Clase 1](recursos/dia1.md)
-Clase 2 | Clase 2
+[Clase 2](teoria/dia2.md) | [Clase 2](recursos/dia2.md)
 Clase 3 | Clase 3
 Clase 4 | Clase 4
 Clase 5 | Clase 5
