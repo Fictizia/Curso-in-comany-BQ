@@ -332,7 +332,13 @@ function calcular (operacion) {
     El formato de la respuesta es *"x de x funcionando hoy"*.
 
 ```javascript
-    // Tu solución
+    var trenesOperativos = 8;
+    var totalTrenes = 12;
+    var estadoOperacional = " trenes funcionando hoy."
+
+    function estadoVia () {
+    	console.log(trenesOperativos+ " de "+totalTrenes+estadoOperacional);
+    };
 ```
 
 - Respuesta esperada (consola):
@@ -345,7 +351,14 @@ function calcular (operacion) {
 2 - Imprimimos por consola el estado de cada tren en movimiento de manera individualizada (sin bucles).
 
 ```javascript
-    // Tu solución
+    console.log("El tren numero "+1+" esta funcionando");
+    console.log("El tren numero "+2+" esta funcionando");
+    console.log("El tren numero "+3+" esta funcionando");
+    console.log("El tren numero "+4+" esta funcionando");
+    console.log("El tren numero "+5+" esta funcionando");
+    console.log("El tren numero "+6+" esta funcionando");
+    console.log("El tren numero "+7+" esta funcionando");
+    console.log("El tren numero "+8+" esta funcionando");
 ```
 
 - Respuesta esperada (consola):
@@ -365,21 +378,43 @@ function calcular (operacion) {
 3 - Refactoriza... usando *while*.
 
 ```javascript
-    // Tu solución
+    var trenesOperativos = 8;
+    var numeroTren = 1; // Primer tren funcionando
+
+    function estadoDetalle () {
+    	while (numeroTren <= trenesOperativos) {
+    		console.log("El tren número "+numeroTren+" esta funcionando");
+    		numeroTren++;
+    	};
+    };
 ```
 
 
 4 - Refactoriza.. usando *Do... While*.
 
 ```javascript
-    // Tu solución
+   var trenesOperativos = 8;
+
+    function estadoDetalle () {
+        var numeroTren = 1
+        do {
+            console.log("El tren numero "+numeroTren+" esta funcionando");
+            numeroTren++
+        } while (numeroTren <= trenesOperativos);
+    };
 ```
 
 
 5 - Refactoriza.. usando *for*.
 
 ```javascript
-    // Tu solución
+        var trenesOperativos = 8;
+
+    function estadoDetalle () {
+    	for (var numeroTren = 1; numeroTren <= trenesOperativos; numeroTren++) {
+    		console.log("El tren numero "+numeroTren+" esta funcionando");
+    	};
+    };
 ```
 
 
