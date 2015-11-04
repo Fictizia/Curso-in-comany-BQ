@@ -322,6 +322,14 @@ function calcular (operacion) {
    } while (i < 10);
     ```
 
+- Al menos se ejecutará una vez, aunque la premisa no sea verdadera.
+
+    ```javascript
+    do{
+       console.warn("me ejecuto")
+    } while (false);
+    ```
+
 
 **Ejercicios**
 > Vamos a crear un sistema de control para el metro. Nuestro objetivo será desarrollar una aplicación para gestionarlo todo. Con este ejercicio nos centraremos en aplicar conceptos básicos de JavaScript
@@ -657,7 +665,14 @@ function era3 () {
 6 - Del total de trenes... ¿cuantos tengo parados?
 
 ```javascript
-    // Tu solución
+    var trenesOperativos = 8;
+    var totalTrenes = 12;
+
+    function trenesParados(){
+    	for(var numeroTren = trenesOperativos + 1; numeroTren <= totalTrenes; numeroTren++){
+    		console.log("El tren numero "+numeroTren+" esta parado");
+    	};
+    };
 ```
 
 - Respuesta esperada (consola):
@@ -673,7 +688,19 @@ function era3 () {
 7 - Refactoricemos y juntemos los dos bucles dentro de una misma función. Así se imprime por consola tanto los trenes que estan funcionanado como los que estan parados
 
 ```javascript
-    // Tu solución
+    var trenesOperativos = 8;
+    var totalTrenes = 12;
+
+    function estadoDetalle () {
+    	var numeroTren = 1;
+    	while (numeroTren <= trenesOperativos) {
+    		console.log("El tren numero "+numeroTren+" esta funcionando");
+    		numeroTren++;
+    	};
+    	for(var trenParado = trenesOperativos + 1; trenParado <= totalTrenes; trenParado++) {
+    		console.log("El tren numero "+trenParado+" esta parado");
+    	};
+    };
 ```
 
 - Respuesta esperada (consola):
@@ -691,225 +718,4 @@ function era3 () {
     El tren numero 10 esta parado
     El tren numero 11 esta parado
     El tren numero 12 esta parado
-```
-
-
-**If... else**
-
-- Estructura:
-    ```javascript
-    /* IF ...ELSE
-    if (-algo verdadero-) {
-        -ejecutaremos este código-
-    } else {
-        -Si lo anterior no era verdadero, se ejecutara este código-
-    };
-    */
-    ```
-
-- Documentación:
-    - [If... else en w3schools](http://www.w3schools.com/js/js_if_else.asp)
-    - [If... else en MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-
-- Ejemplo:
-    ```javascript
-    if (true) {
-        console.log("true, por eso me ejecuto");
-    } else {
-        console.log("false, por eso me ejecuto");
-    }
-    ```
-
-
-**Else if...**
-
-```javascript
-function testCondiccion (condicion){
-    if (condicion == 1) {
-        console.log("1, por eso me ejecuto");
-    } else if (condicion == 2){
-        console.log("2, por eso me ejecuto");
-    } else {
-        console.log("no es 1 o 2, por eso me ejecuto");
-    }
-}
-```
-
-
-**AND(&&)**
-
-Elemento 1 | Elemento 2 | Resultado
------------- | ------------- | -------------
-true | true | true
-true | false | false
-false | false | false
-false | true | false
-
-
-**OR(||)**
-
-Elemento 1 | Elemento 2 | Resultado
------------- | ------------- | -------------
-true | true | true
-true | false | true
-false | false | false
-false | true | true
-
-
-```javascript
-var ex1 = true && true; // true
-var ex2 = (2 == 2) && (3 >= 6); // false
-var ex3 = (2>3) || (17 <= 40); // true
-var ex4 = false || false; // false
-
-function condicionalAvanzado ( paraComparar ) {
-    if (paraComparar) {
-        console.log("Verdadero!");
-    } else {
-        console.log("falso!");
-    };
-};
-```
-
-
-**Interacción Básica con el Usuario**
-
-- alert():
-    ```javascript
-    alert("¡Bienvenido a esta web!");
-    ```
-
-- confirm():
-    ```javascript
-    confirm("¿Esta seguro que desea abandonar esta web?");
-    ```
-
-- prompt():
-    ```javascript
-    prompt("¿Como te llamas?");
-    ```
-
-- Registremos los datos en una variable:
-    ```javascript
-    var nombre = prompt("¿Como te llamas?");
-    ```
-
-
-**Arrays**
-
-- Creando un array:
-    ```javascript
-    var arreglo = [];
-    arreglo = [1, "platano", "piscina", "manzana", true];
-    ```
-
-- Usando el Índice:
-    ```javascript
-    arreglo[1];
-    ```
-
-- Cambiar un valor del Índice:
-    ```javascript
-    arreglo[0] = "fresa";
-    arreglo[4] = "pera";
-    arreglo[2] = "limón";
-    ```
-
-- Índice total:
-    ```javascript
-    arreglo.length;
-    ```
-
-- .push() *Añadir elemento al índice*:
-    ```javascript
-    arreglo.push("nuevo");
-    ```
-
-- .pop() *Eliminar el último elemento del índice*:
-    ```javascript
-    arreglo.pop();
-    ```
-
-- .shift() *Eliminar el primer elemento*:
-    ```javascript
-    arreglo.shift();
-    ```
-
-- delete *sobrescribe a undefined*
-    ```javascript
-    delete arreglo[0];
-    ```
-
-- Elementos vacios:
-    ```javascript
-    arreglo[0] = undefined;
-    ```
-
-- .splice() *Borrar*:
-    ```javascript
-    var manzana = arreglo.splice(3, 1);
-    ```
-
-- .map():
-    ```javascript
-    var arreglo = ["plátano", "fresa", "lima", "manzana"];
-    var resultado = arreglo.map(function (elemento){return elemento + " modificado!"});
-    console.log(resultado);
-    ```
-
-
-
-**Arreglos avanzados**
-```javascript
-var arreglo1 = ["plátano", "fresa", "lima", "manzana"];
-var arreglo2 = ["entrante", "primero", "segundo", "postre"];
-
-var juntandoArreglos = [arreglo1, arreglo2];
-
-function testArreglos () {
-    console.log(juntandoArreglos[0][0]);
-    console.log(juntandoArreglos[1][3]);
-};
-```
-
-
-**Ejercicios**
-
-8 - **#simplifiquemos!** Quiero solo un bucle para todo.
-
-```javascript
-    // Tu solución
-```
-
-9 - **#compliquemos!** Servicio nocturno en el tren 10.
-*Nota: Frente al ejercicio anterior, en este caso queremos que siempre que hablemos del
-tren 10 se especifique que es nocturno. Independientemente de si esta parado o funcionando.*
-
-```javascript
-    // Tu solución
-```
-
-
-10 - Refactoricemos - ¿Y si todos los trenes están en las vías funcionando o por el contrario si ninguno de los trenes esta funcionando?.
-
-```javascript
-    // Tu solución
-```
-
-11 - El servicio nocturno se queda un poco corto y necesitamos añadir un nuevo tren de refuerzo.
-El 12 será destinado a cubrir esta necesidad, exactamente igual que el 10 anteriormente.
-
-```javascript
-    // Tu solución
-```
-
-
-12 - El departamento de Marketing ha decidido lanzar un nuevo servicio los sábados.
- El "tren fiestero" será un tren adaptado a un público más intrépido y funcionará solo en los sábados.
- Este tren será el número 3.
-
-*NOTA: EL TREN 3 SOLO FUNCIONA LOS SÁBADOS. Es necesario incluir el día de la semana en tu código*
-
-```javascript
-    // Tu solución
 ```
