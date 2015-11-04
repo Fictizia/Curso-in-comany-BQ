@@ -201,7 +201,18 @@ function testArreglos () {
 8 - **#simplifiquemos!** Quiero solo un bucle para todo.
 
 ```javascript
-    // Tu solución
+    var trenesOperativos = 8;
+    var totalTrenes = 12;
+
+    function estadoDetalle () {
+    	for(var numeroTren = 1; numeroTren <= totalTrenes; numeroTren++) {
+    		if (numeroTren <= trenesOperativos) {
+    			console.log("El tren número "+numeroTren+" esta funcionando");
+    		}else {
+    			console.log("El tren número "+numeroTren+" esta parado");
+    		};		
+    	};
+    };
 ```
 
 9 - **#compliquemos!** Servicio nocturno en el tren 10.
@@ -209,21 +220,76 @@ function testArreglos () {
 tren 10 se especifique que es nocturno. Independientemente de si esta parado o funcionando.*
 
 ```javascript
-    // Tu solución
+    var trenesOperativos = 8;
+    var totalTrenes = 12;
+
+    function estadoDetalle () {
+    	for(var numeroTren = 1; numeroTren <= totalTrenes; numeroTren++) {
+    		if ((numeroTren <= trenesOperativos) && (numeroTren != 10)) {
+    			console.log("El tren numero "+numeroTren+" esta funcionando");
+    		} else if (numeroTren == 10){
+    			console.info("IMPORTANTE: El tren número "+numeroTren+" es nocturno");
+    		} else {
+    			console.log("El tren numero "+numeroTren+" esta parado");
+    		};		
+    	};
+    };
 ```
 
 
 10 - Refactoricemos - ¿Y si todos los trenes están en las vías funcionando o por el contrario si ninguno de los trenes esta funcionando?.
 
 ```javascript
-    // Tu solución
+    var trenesOperativos = 8;
+    var totalTrenes = 12;
+
+    function estadoDetalle () {
+    	if (trenesOperativos > 0) {
+    		if(trenesOperativos == totalTrenes){
+    			console.log("Todos los trenes estan funcionando");
+    		} else {
+    			for(var numeroTren = 1; numeroTren <= totalTrenes; numeroTren++) {
+    				if ((numeroTren <= trenesOperativos)  && (numeroTren != 10)) {
+    					console.log("El tren numero "+numeroTren+" esta funcionando");
+    				} else if (numeroTren == 10){
+    					console.log("IMPORTANTE: El tren numero "+numeroTren+" es nocturno");
+    				} else {
+    					console.log("El tren numero "+numeroTren+" esta parado");
+    				};		
+    			};
+    		};
+    	} else {
+    		console.log("IMPORTANTE: Ningún tren esta funcionando");
+    	};
+    };
 ```
 
 11 - El servicio nocturno se queda un poco corto y necesitamos añadir un nuevo tren de refuerzo.
 El 12 será destinado a cubrir esta necesidad, exactamente igual que el 10 anteriormente.
 
 ```javascript
-    // Tu solución
+    var trenesOperativos = 8;
+    var totalTrenes = 12;
+
+    function estadoDetalle () {
+    	if (trenesOperativos > 0) {
+    		if(trenesOperativos == totalTrenes){
+    			console.log("Todos los trenes están funcionando");
+    		} else {
+    			for(var numeroTren = 1; numeroTren <= totalTrenes; numeroTren++) {
+    				if ((numeroTren <= trenesOperativos) && (numeroTren != 10) && (numeroTren != 12)) {
+    					console.log("El tren numero "+numeroTren+" esta funcionando");
+    				} else if (numeroTren == 10 || numeroTren == 12){
+    					console.log("IMPORTANTE: El tren numero "+numeroTren+" es nocturno");
+    				} else {
+    					console.log("El tren numero "+numeroTren+" esta parado");
+    				};		
+    			};
+    		};
+    	} else {
+    		console.log("IMPORTANTE: Ningún tren esta funcionando");
+    	};
+    };
 ```
 
 
@@ -234,7 +300,32 @@ El 12 será destinado a cubrir esta necesidad, exactamente igual que el 10 anter
 *NOTA: EL TREN 3 SOLO FUNCIONA LOS SÁBADOS. Es necesario incluir el día de la semana en tu código*
 
 ```javascript
-    // Tu solución
+    var trenesOperativos = 8;
+    var totalTrenes = 12;
+    var diaSemana = "Sabado";
+    function estadoDetalle () {
+    	if (trenesOperativos > 0) {
+    		if(trenesOperativos == totalTrenes){
+    			console.log("Todos los trenes están funcionando");
+    		} else {
+    			for(var numeroTren = 1; numeroTren <= totalTrenes; numeroTren++) {
+    				if (numeroTren <= trenesOperativos  && numeroTren != 3 && numeroTren != 10 && numeroTren != 12) {
+    					console.log("El tren numero "+numeroTren+" esta funcionando");
+    				} else if (numeroTren == 10 || numeroTren == 12){
+    					console.info("IMPORTANTE: El tren numero "+numeroTren+" es nocturno");
+    				} else if (numeroTren == 3 && diaSemana == "Sabado"){
+    					console.info("El tren fiestero("+numeroTren+") esta funcionando.")
+    				} else if (numeroTren == 3 && diaSemana != "Sabado"){
+    					console.info("El tren fiestero("+numeroTren+") funcionará el sabado.")
+    				} else {
+    					console.log("El tren numero "+numeroTren+" esta parado");
+    				};		
+    			};
+    		};
+    	} else {
+    		console.log("IMPORTANTE: Ningún tren esta funcionando");
+    	};
+    };
 ```
 
 

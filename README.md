@@ -68,7 +68,7 @@
 	- C9
 	- Git y GitHub
 
-- **Dia 2:**
+- **Dia 2 y 3:**
 	- Reintroducción a JS
 
 
