@@ -78,9 +78,9 @@
 Teoría | Recursos
 ------------ | -------------
 [Clase 1](teoria/semana1.md)	| [Clase 1](recursos/semana1.md)
-[Clase 2](teoria/semana2.md) | [Clase 2](recursos/semana2.md)
-[Clase 3](teoria/semana3.md) | [Clase 3](recursos/semana3.md)
-[Clase 4](teoria/semana4.md) | [Clase 4](recursos/semana4.md)
+[Clase 2](teoria/semana1.md) | [Clase 2](recursos/semana1.md)
+[Clase 3](teoria/semana1.md) | [Clase 3](recursos/semana1.md)
+[Clase 4](teoria/semana1.md) | [Clase 4](recursos/semana1.md)
 [Clase 5](teoria/dia5.md) | [Clase 5](recursos/dia5.md)
 Clase 6 | Clase 6
 Clase 7 | Clase 7
