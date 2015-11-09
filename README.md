@@ -7,7 +7,7 @@
 - Inicio: 02/11/2015
 - Fin: 02/12/2015
 - Horario: de 9:00 a 11:00 h. de lunes a jueves
-- Total: 36 h (18 clases). 
+- Total: 34 h (17 clases). 
 
 
 ### Temario:
@@ -62,26 +62,26 @@
 - Desarrollar un Cliente Streaming (sockets.io) de Twitter con analisis sentimental
 
 
-### Temario por día:
+### Temario por semanas y días:
 
-- **Dia 1:**
+- **[Semana 1](teoria/semana1.md)**
 	- C9
 	- Git y GitHub
-
-- **Dia 2, 3 y 4:**
 	- Reintroducción a JS
 
-
+- **Dia 5:**
+    - Repaso semana 1	
+    - POO
 
 ### Contenido
 
 Teoría | Recursos
 ------------ | -------------
-[Clase 1](teoria/dia1.md)	| [Clase 1](recursos/dia1.md)
-[Clase 2](teoria/dia2.md) | [Clase 2](recursos/dia2.md)
-[Clase 3](teoria/dia3.md) | [Clase 3](recursos/dia3.md)
-[Clase 4](teoria/dia4.md) | [Clase 4](recursos/dia4.md)
-Clase 5 | Clase 5
+[Clase 1](teoria/semana1.md)	| [Clase 1](recursos/semana1.md)
+[Clase 2](teoria/semana2.md) | [Clase 2](recursos/semana2.md)
+[Clase 3](teoria/semana3.md) | [Clase 3](recursos/semana3.md)
+[Clase 4](teoria/semana4.md) | [Clase 4](recursos/semana4.md)
+[Clase 5](teoria/dia5.md) | [Clase 5](recursos/dia5.md)
 Clase 6 | Clase 6
 Clase 7 | Clase 7
 Clase 8 | Clase 8
@@ -94,4 +94,3 @@ Clase 14 | Clase 14
 Clase 15 | Clase 15
 Clase 16 | Clase 16
 Clase 17 | Clase 17
-Clase 18 | Clase 18
