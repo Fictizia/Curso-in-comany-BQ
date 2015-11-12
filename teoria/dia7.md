@@ -1,6 +1,5 @@
 **Ejercicios**
 
-
 4 - Añadamos al sistema la posibilidad de saber las condiciones del agua y del ecosistema:
 - total peces por tipo
 - total hortalizas por tipo
