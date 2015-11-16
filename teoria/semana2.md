@@ -1458,18 +1458,9 @@ ref.orderByKey().startAt("b").endAt("b~").on("child_added", function(snapshot) {
 - Realizando acciones al desconectarse:
 
 ```javascript
-  var presenceRef = new Firebase('https://experimentos.firebaseio.com/.info/disconnectmessage');
+  var presenceRef = new Firebase('https://experimentos.firebaseio.com/info/connectednow');
   presenceRef.onDisconnect().set("I disconnected!");
   
-  // Comprobando el estado
-  var connectedRef = new Firebase("https://experimentos.firebaseio.com/info/connected");
-  connectedRef.on("value", function(snap) {
-    if (snap.val() === true) {
-      console.log("Conectado");
-    } else {
-      console.log("Desconectado");
-    }
-  });
 ```
 
 
