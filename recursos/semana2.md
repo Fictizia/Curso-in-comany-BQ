@@ -14,9 +14,6 @@
 - [.toLocalString()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString)
 - [.toString()](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/toString)
 
-
-# Dia 7
-
 ### Firebase
 
 - [Firebase Pricing](https://www.firebase.com/pricing.html)
