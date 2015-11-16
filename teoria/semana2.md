@@ -1492,7 +1492,5 @@ Objetivos:
 ![Party_joke_commitStrip](http://www.commitstrip.com/wp-content/uploads/2015/02/Strip-Saint-valentin-650-finalenglish.jpg)
 
 
-```javascript
-    // Tu solución
-```	
+- [Solución](../otros/formularioFirebase)	
 	
