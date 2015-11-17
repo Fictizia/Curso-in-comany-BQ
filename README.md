@@ -86,7 +86,7 @@ Teoría | Recursos
 [Clase 6](teoria/semana2.md) | [Clase 6](recursos/semana2.md)
 [Clase 7](teoria/semana2.md) | [Clase 7](recursos/semana2.md)
 [Clase 8](teoria/dia8.md) | [Clase 8](recursos/dia8.md)
-Clase 9 | Clase 9
+[Clase 9](teoria/dia9.md) | [Clase 9](recursos/dia9.md)
 Clase 10 | Clase 10
 Clase 11 | Clase 11
 Clase 12 | Clase 12
