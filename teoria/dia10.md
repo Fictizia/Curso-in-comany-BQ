@@ -397,7 +397,7 @@ function initMap() {
 	 //	Tu solución aquí
 ```
 
-4 - Utiliza esta [librería](otros/starwars) para posicionar al usuario, los cascos de StarWars con sus característicos iconos y la distancia estimada
+4 - Utiliza esta [librería](https://github.com/UlisesGascon/Curso-in-comany-BQ/tree/master/otros/starwars) para posicionar al usuario, los cascos de StarWars con sus característicos iconos y la distancia estimada
 
 ![Captura](https://raw.githubusercontent.com/UlisesGascon/Face-the-force-con-html5/master/img/captura_helmets_distance.png)
 
