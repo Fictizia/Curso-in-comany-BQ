@@ -7,8 +7,118 @@
 
 1 - Utiliza Google Maps para posicionar al usuario.
 
-```javascript
-	 //	Tu solución aquí
+```html
+
+    <!DOCTYPE html>
+    <html lang="es">
+        <head>
+        <title>Demo: Geolocalización</title>
+        <meta charset="utf-8" />
+        <style>
+          #mapa {
+            	width: 100%; 
+            	height: 300px;
+          	margin: 0;
+          }
+        </style>
+        </head>
+        <body>
+            <div id="mapa"></div>
+            <div id="datos"></div>
+            <a id="recarga" href="#">Recargar!</a>
+            
+            <!--[if lt IE 9]>
+              <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+            <script type='text/javascript' src="http://maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"></script>
+            <script type="text/javascript">
+              (function() {
+              // Google Maps        
+              google.maps.visualRefresh = true; // Refresco Constante
+              
+              var map;
+              function initialize() {
+                var mapOptions = {
+                  zoom: 15,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                map = new google.maps.Map(document.getElementById('mapa'),
+                    mapOptions);
+                  // Try HTML5 geolocation
+                if(navigator.geolocation) {
+                  navigator.geolocation.getCurrentPosition(function(position) {
+                    var pos = new google.maps.LatLng(position.coords.latitude,
+                                                     position.coords.longitude);
+                    var infowindow = new google.maps.InfoWindow({
+                      map: map,
+                      position: pos,
+                      content: 'Te pille! :-)'
+                    });
+                    map.setCenter(pos);
+                    
+              
+                    //datos Primer Arranque
+                    muestraDatos(x ,position);
+              
+                  
+                  }, function() {
+                    handleNoGeolocation(true);
+                  });
+                } else {
+                  // Browser doesn't support Geolocation
+                  handleNoGeolocation(false);
+                }
+              }
+              
+              function handleNoGeolocation(errorFlag) {
+                if (errorFlag) {
+                  var content = 'Error: El Servicio de Geolocalización esta fallando.';
+                } else {
+                  var content = 'Error: Tu navegador no soprota la Geolocalización.';
+                }
+              
+                var options = {
+                  map: map,
+                  position: new google.maps.LatLng(60, 105),
+                  content: content
+                };
+              
+                var infowindow = new google.maps.InfoWindow(options);
+                map.setCenter(options.position);
+              }
+              
+              google.maps.event.addDomListener(window, 'load', initialize);
+              
+              
+              // Datos (Core)
+              
+              var x = document.getElementById("datos");
+              var a = document.getElementById("recarga");
+              
+              function muestraDatos(div, position){        
+                      x.innerHTML = "Latitud: " + position.coords.latitude + 
+                      "<br>Longitud: " + position.coords.longitude +
+                      "<br>Precisión: " + position.coords.accuracy +
+                      "<br>Altitud: " + position.coords.altitude +
+                      "<br>Altitud Precisa: " + position.coords.altitudeAccuracy +
+                      "<br>Grados Norte: " + position.coords.heading +
+                      "<br>Velocidad m/s: " + position.coords.speed + 
+                      "<br>Última Conexión: " + position.timestamp;
+              };
+              
+              
+              //datos Actualizacion
+              a.onclick = function() {
+                      initialize();
+                      return false;
+              }
+              
+                  
+              })();
+            </script>
+        </body>
+    </html>
+
 ```
 
 2 - *RETO:* Partiendo de este [Gist](https://gist.github.com/strongwave/1297177), adapta el script a lo que aprendimos en estos días y compartelo usando Gist.
