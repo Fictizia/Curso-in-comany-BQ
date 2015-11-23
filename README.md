@@ -7,7 +7,7 @@
 - Inicio: 02/11/2015
 - Fin: 02/12/2015
 - Horario: de 9:00 a 11:00 h. de lunes a jueves
-- Total: 34 h (17 clases). 
+- Total: 36 h (18 clases). 
 
 
 ### Temario:
@@ -95,3 +95,4 @@ Clase 14 | Clase 14
 Clase 15 | Clase 15
 Clase 16 | Clase 16
 Clase 17 | Clase 17
+Clase 18 | Clase 18
