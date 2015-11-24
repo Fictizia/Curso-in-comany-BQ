@@ -16,7 +16,6 @@ var miEvento = new CustomEvent("eventoCustom", {
   }
 });
 
-// Disparamos el evento!
 document.body.dispatchEvent(miEvento);
 ```
 
