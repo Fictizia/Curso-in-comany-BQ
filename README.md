@@ -1,3 +1,7 @@
+![shieldsIO](https://img.shields.io/github/issues/UlisesGascon/Curso-in-comany-BQ.svg)
+![shieldsIO](https://img.shields.io/github/forks/UlisesGascon/Curso-in-comany-BQ.svg)
+![shieldsIO](https://img.shields.io/github/stars/UlisesGascon/Curso-in-comany-BQ.svg)
+
 # [Curso in company](http://www.fictizia.com/incompany/) para [BQ](http://www.nextret.net/es)
 
 ![WideImg](http://www.fictizia.com/assets/styles/styleImgs/wideBox/wideImg-formacion-empresas.png)
@@ -90,7 +94,7 @@ Teoría | Recursos
 [Clase 10](teoria/semana3.md) | [Clase 10](recursos/semana3.md)
 [Clase 11](teoria/semana3.md) | [Clase 11](recursos/semana3.md)
 [Clase 12](teoria/dia12.md) | [Clase 12](recursos/dia12.md)
-Clase 13 | Clase 13
+[Clase 13](teoria/dia13.md) | [Clase 13](recursos/dia13.md)
 Clase 14 | Clase 14
 Clase 15 | Clase 15
 Clase 16 | Clase 16
