@@ -687,6 +687,4 @@ document.body.dispatchEvent(miEvento);
     - Usa una función anónima para encapsular el código
     - Utiliza métodos y propiedades privadas
 
-```javascript
-    // Tu solución
-```
+- [Solución](https://github.com/UlisesGascon/Curso-in-comany-BQ/tree/master/otros/cajero)
