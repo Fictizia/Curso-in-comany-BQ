@@ -179,14 +179,31 @@ Instalamos las dependencias en el proyecto:
 **Ejercicio**
 
 1 - Crearemos varios scripts para automatizar tareas.
-    - Verificador de versiones para NPM y Nodejs
-    - Verificador del status de Git
-    - Descargar (Clonar) Bootstrap de Github
-    - Descargar (Clonar) nuestro curso de Github
-    - Emoji al azar con [emoji-random](https://www.npmjs.com/package/emoji-random)
+- Verificador de versiones para NPM y Nodejs
+- Verificador del status de Git
+- Descargar (Clonar) Bootstrap de Github
+- Descargar (Clonar) nuestro curso de Github
+- Emoji al azar con [emoji-random](https://www.npmjs.com/package/emoji-random)
 
 ```javascript
-    // Tu solución
+{
+  "name": "npm-scripts-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "emoji": "emoji-random",
+    "versions": "node -v && npm -v",
+    "bootstrap": "git clone https://github.com/twbs/bootstrap.git",
+    "curso": "git clone https://github.com/UlisesGascon/Curso-in-comany-BQ",
+    "status": "git status"
+  },
+  "devDependencies": {
+    "emoji-random": "^0.1.2"
+  },
+  "author": "Ulises Gascon",
+  "license": "ISC"
+}
 ```
 
 
@@ -230,7 +247,7 @@ Instalamos las dependencias en el proyecto:
 
 - Hola mundo! (retraso):
 ```javascript
-  setTimeour(function() {
+  setTimeout(function() {
     console.log("Hola Futuro...!");
   }, 5000);
 ```
