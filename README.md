@@ -96,7 +96,7 @@ Teoría | Recursos
 [Clase 12](teoria/dia12.md) | [Clase 12](recursos/dia12.md)
 [Clase 13](teoria/dia13.md) | [Clase 13](recursos/dia13.md)
 Clase 14 | Clase 14
-Clase 15 | Clase 15
+[Clase 15](teoria/dia15.md) | [Clase 15](recursos/dia15.md)
 Clase 16 | Clase 16
 Clase 17 | Clase 17
 Clase 18 | Clase 18
