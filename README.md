@@ -93,10 +93,10 @@ Teoría | Recursos
 [Clase 9](teoria/semana3.md) | [Clase 9](recursos/semana3.md)
 [Clase 10](teoria/semana3.md) | [Clase 10](recursos/semana3.md)
 [Clase 11](teoria/semana3.md) | [Clase 11](recursos/semana3.md)
-[Clase 12](teoria/dia12.md) | [Clase 12](recursos/dia12.md)
-[Clase 13](teoria/dia13.md) | [Clase 13](recursos/dia13.md)
-Clase 14 | Clase 14
-[Clase 15](teoria/dia15.md) | [Clase 15](recursos/dia15.md)
-Clase 16 | Clase 16
+[Clase 12](teoria/semana4.md) | [Clase 12](recursos/semana4.md)
+[Clase 13](teoria/semana4.md) | [Clase 13](recursos/semana4.md)
+[Clase 14](teoria/semana4.md) | [Clase 14](recursos/semana4.md)
+[Clase 15](teoria/semana4.md) | [Clase 15](recursos/semana4.md)
+[Clase 16](teoria/dia16.md) | [Clase 16](recursos/dia16.md)
 Clase 17 | Clase 17
 Clase 18 | Clase 18

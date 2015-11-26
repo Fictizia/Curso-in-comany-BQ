@@ -27,12 +27,6 @@
 - [Express - Books & Blogs](http://expressjs.com/resources/books-blogs.html)
 - [Express - Who use it?](http://expressjs.com/resources/applications.html)
 
-**Bower**
-
-- [NPM Bower](https://www.npmjs.com/package/bower)
-- [Bower](http://bower.io/)
-- [Tendencias Bower](http://bower.io/stats/)
-- [Buscador Bower](http://bower.io/search/)
 
 **Otros**
 - [Winston Node](http://tostring.it/2014/06/23/advanced-logging-with-nodejs/)
