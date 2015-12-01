@@ -1,8 +1,10 @@
 ![shieldsIO](https://img.shields.io/github/issues/UlisesGascon/Curso-in-comany-BQ.svg)
 ![shieldsIO](https://img.shields.io/github/forks/UlisesGascon/Curso-in-comany-BQ.svg)
 ![shieldsIO](https://img.shields.io/github/stars/UlisesGascon/Curso-in-comany-BQ.svg)
+[![shieldsIO](https://img.shields.io/badge/Fictizia-Curso%20in%20Company-blue.svg)](http://www.fictizia.com/incompany/)
 
-# [Curso in company](http://www.fictizia.com/incompany/) para [BQ](http://www.nextret.net/es)
+
+# [Curso in company](http://www.fictizia.com/incompany/) para [BQ](http://www.bq.com/es/)
 
 ![WideImg](http://www.fictizia.com/assets/styles/styleImgs/wideBox/wideImg-formacion-empresas.png)
 ![Fictizia Logo](https://media.licdn.com/media/p/1/000/1ed/254/29475de.png)
@@ -21,8 +23,21 @@
 - JS Avanzado: 
     - POO
     - Programación funcional
-    - MVC (Backbone)
+    - MVC (Express y Nodejs)
     - ECMA6
+    - Patrones
+        - Mediador
+        - Prototipo
+        - Façade
+        - Decorador
+        - Namespace
+        - Init-time branching
+        - Lazy Definition
+        - Revealing Module Pattern
+        - Memoization
+        - Módulo
+        - Singleton
+        - Factory
 - AJAX:
     - HTTP
     - JSON
@@ -31,14 +46,11 @@
     - Selectors
     - Geolocalización
     - LocalStorage
-    - IndexedDB
     - ContentEditable
     - Offline
     - History
     - Drag & Drop
     - File
-    - Web Messaging
-    - Workers
     - WebSockets
     - Canvas
 - Gulp
@@ -60,10 +72,9 @@
 
 ### Temario (extras prácticas):
 
-- Desarrollar una API sencilla (sin frameworks) siguiendo la filosofía NoBackend con OMBD y Firebase
-- Desarrollar una API sencilla (con Backbone) siguiendo la filosofía NoBackend con OMBD y Firebase
-- Desarrollar una API con express, OMBD y Firebase
-- Desarrollar un Cliente Streaming (sockets.io) de Twitter con analisis sentimental
+- [Desarrollar una API sencilla (sin frameworks) siguiendo la filosofía NoBackend con OMBD y Firebase](https://github.com/UlisesGascon/Curso-in-comany-BQ/tree/master/otros/movieFire/jsFire)
+- [Desarrollar una API con express, OMBD y Firebase](https://github.com/UlisesGascon/Simple-API-REST-with-Firebase-and-IMBD)
+- [Desarrollar un Cliente Streaming (sockets.io) de Twitter con analisis sentimental](https://github.com/UlisesGascon/twitter-sentiments)
 
 
 ### Temario por semanas y días:
@@ -77,6 +88,32 @@
     - Programación funcional
     - POO
     - Firebase
+
+- **[Semana 3](teoria/semana3.md)**
+    - Trabajando con APIs
+    - Ajax
+    - HTML5 API
+    - Eventos
+
+- **[Semana 4](teoria/semana4.md)**
+    - Patrones
+    - Nodejs
+    - NPM
+    - JADE
+    - Express
+    - Web Sockets
+
+- **[Semana 5](teoria/semana5.md)**
+    - Automatizacion (Bower, Gulp, Yeoman)
+    - Patrones
+    - Requirejs
+    - Tecnicas Avanzadas
+    - Promesas
+    - Testing
+    - Rendimiento
+    - ECMA6
+
+- **[contenido Extra](teoria/extras.md)**
 
 ### Contenido
 
@@ -97,6 +134,6 @@ Teoría | Recursos
 [Clase 13](teoria/semana4.md) | [Clase 13](recursos/semana4.md)
 [Clase 14](teoria/semana4.md) | [Clase 14](recursos/semana4.md)
 [Clase 15](teoria/semana4.md) | [Clase 15](recursos/semana4.md)
-[Clase 16](teoria/dia16.md) | [Clase 16](recursos/dia16.md)
-[Clase 17](teoria/dia17.md) | [Clase 17](recursos/dia17.md)
-[Clase 18](teoria/dia18.md) | [Clase 18](recursos/dia18.md)
+[Clase 16](teoria/semana5.md) | [Clase 16](recursos/semana5.md)
+[Clase 17](teoria/semana5.md) | [Clase 17](recursos/semana5.md)
+[Clase 18](teoria/semana5.md) | [Clase 18](recursos/semana5.md)
