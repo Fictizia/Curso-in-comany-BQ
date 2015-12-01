@@ -98,5 +98,5 @@ Teoría | Recursos
 [Clase 14](teoria/semana4.md) | [Clase 14](recursos/semana4.md)
 [Clase 15](teoria/semana4.md) | [Clase 15](recursos/semana4.md)
 [Clase 16](teoria/dia16.md) | [Clase 16](recursos/dia16.md)
-Clase 17 | Clase 17
-Clase 18 | Clase 18
+[Clase 17](teoria/dia17.md) | [Clase 17](recursos/dia17.md)
+[Clase 18](teoria/dia18.md) | [Clase 18](recursos/dia18.md)
